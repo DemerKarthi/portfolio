@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0e27;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f0ff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffff;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(26, 31, 58, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+/* Neon text glow */
+.neon-text {
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 30px #00f0ff;
+}
+
+/* Glow effect */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+  transform: translateY(-5px);
+}
+
+/* Section spacing */
+.section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 15px;
+  }
+}
+
